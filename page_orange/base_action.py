@@ -52,22 +52,3 @@ class BaseAction:
         if default_timeout is None:
             default_timeout = self.basic_wait_time
             WebDriverWait(self.driver,default_timeout).until(EC.presence_of_element_located(locator))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
