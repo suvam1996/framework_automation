@@ -1,0 +1,8 @@
+{
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "c_browser": "chrome",
+  "f_browser": "firefox",
+  "e_browser": "edge",
+  "id" : "Admin",
+  "password" : "admin123"
+}

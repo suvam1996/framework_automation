@@ -1,0 +1,4 @@
+to install all library and packages-
+1. I have go to the file path in the terminal.
+2. Then use syntax "pip install -r <file-name>"
+        Here "r" is use for install multiple pip
