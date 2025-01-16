@@ -13,7 +13,7 @@ def get_parent_folder():
 def get_value_from_input_file(key):
     """
     it will fetch data form json file
-    and if will pass the key it will provide value for that key
+    and it will pass the key as an argument and it will provide value for that key
     :param key:
     :return:
     """

@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 class BaseAction:
     basic_wait_time = 30        #dought----------------------
 
@@ -84,9 +83,8 @@ class BaseAction:
 
 
     def check_is_selected(self,locator):
-        """it is used to check if a web element is currently selected. This method is typically used with elements like:
-        Checkboxes
-        Radio buttons
+        """it is used to check if a web element is currently selected.
+        This method is typically used with elements like: Checkboxes, Radio buttons
         Options in a dropdown menu (when implemented using <select> and <option>)"""
 
         element = self.get_web_element(locator)
