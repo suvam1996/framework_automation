@@ -19,6 +19,6 @@ def browser_set_up_and_teardown(request):
     base_page.maximize_window_screen()
     request.cls.driver = driver
     yield
-    base_page.tear_down()
+    base_page.close_browser()
 
 
