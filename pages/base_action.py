@@ -89,8 +89,3 @@ class BaseAction:
 
         element = self.get_web_element(locator)
         element.is_selected()
-
-
-
-
-

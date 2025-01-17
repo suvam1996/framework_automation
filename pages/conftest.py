@@ -1,7 +1,7 @@
 
 import pytest
-from page_orange.base_action import BaseAction
-from page_orange.common_functions import get_value_from_input_file
+from pages.base_action import BaseAction
+from pages.common_functions import get_value_from_input_file
 
 global driver
 # driver = None  #dought-----------

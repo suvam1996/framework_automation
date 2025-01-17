@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b945f2e-5884-4497-9d47-16973bafbef9" name="Changes" comment="add documentations" />
+    <list default="true" id="1b945f2e-5884-4497-9d47-16973bafbef9" name="Changes" comment="add documentations">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page_orange/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_orange/base_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_orange/base_action.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +43,9 @@
     &quot;accountId&quot;: &quot;d4071efc-c81e-46c2-9a30-91421755e596&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/page_orange/base_action.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -106,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737047333283</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add documentations">
+      <option name="closed" value="true" />
+      <created>1737048424422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737048424422</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,16 +175,5 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="add documentations" />
     <option name="LAST_COMMIT_MESSAGE" value="add documentations" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/page_orange/common_functions.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
