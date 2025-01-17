@@ -1,7 +1,7 @@
 import time
 
 from pages.base_action import BaseAction
-from selenium.webdriver.common.by import By
+
 
 class Register(BaseAction):
     register_text = '//h2[text()="Register"]'
@@ -60,5 +60,7 @@ class Register(BaseAction):
         self.get_web_element(self.languages_click).click()
         self.wait_for_element(self.language_dropdown)
         self.click_me('//a[text()="English"]')
+
+
 
 
