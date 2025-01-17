@@ -12,6 +12,8 @@ class Register(BaseAction):
     phone_no = '//input[@type="tel"]'
     gender = '//div[@class="col-md-4 col-xs-4 col-sm-4"]/label/input'
     hobbies = '//div[@class="col-md-4 col-xs-4 col-sm-4"]/div/input'
+    languages_click = '//div[@id="msdd"]'
+    language_dropdown = '//ul[@class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"]'
 
 
 
@@ -54,12 +56,9 @@ class Register(BaseAction):
             print(f'hobby name- {i.get_attribute("value")},check is selected {i.is_selected()}')
             time.sleep(2)
 
-
-
-
-
-
-
-
+    def language_select(self):
+        self.get_web_element(self.languages_click).click()
+        self.wait_for_element(self.language_dropdown)
+        self.click_me('//a[text()="English"]')
 
 
