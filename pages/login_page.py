@@ -45,14 +45,14 @@ class Register(BaseAction):
     def gender_select(self):
         elements = self.get_web_elements(self.gender)
         for each in elements:
-            each.click()
+            self.click_me(each)
             print(f'gender name- {each.get_attribute("value")},check is selected {each.is_selected()}')
             time.sleep(2)
 
     def hobbies_select(self):
         elements = self.get_web_elements(self.hobbies)
         for i in elements:
-            i.click()
+            self.click_me(i)
             print(f'hobby name- {i.get_attribute("value")},check is selected {i.is_selected()}')
             time.sleep(2)
 
