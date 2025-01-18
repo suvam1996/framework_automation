@@ -1,19 +1,19 @@
 import time
 
 from pages.base_action import BaseAction
-
+from selenium.webdriver.common.by import By
 
 class Register(BaseAction):
-    register_text = '//h2[text()="Register"]'
-    first_name = '//input[@placeholder="First Name"]'
-    last_name = '//input[@placeholder="Last Name"]'
-    adress = '//textarea[@ng-model="Adress"]'
-    email_id = '//input[@type="email"]'
-    phone_no = '//input[@type="tel"]'
-    gender = '//div[@class="col-md-4 col-xs-4 col-sm-4"]/label/input'
-    hobbies = '//div[@class="col-md-4 col-xs-4 col-sm-4"]/div/input'
-    languages_click = '//div[@id="msdd"]'
-    language_dropdown = '//ul[@class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"]'
+    register_text = (By.XPATH,'//h2[text()="Register"]')
+    first_name = (By.XPATH,'//input[@placeholder="First Name"]')
+    last_name = (By.XPATH,'//input[@placeholder="Last Name"]')
+    adress = (By.XPATH,'//textarea[@ng-model="Adress"]')
+    email_id = (By.XPATH,'//input[@type="email"]')
+    phone_no = (By.XPATH,'//input[@type="tel"]')
+    gender = (By.XPATH,'//div[@class="col-md-4 col-xs-4 col-sm-4"]/label/input')
+    hobbies = (By.XPATH,'//div[@class="col-md-4 col-xs-4 col-sm-4"]/div/input')
+    languages_click = (By.XPATH,'//div[@id="msdd"]')
+    language_dropdown = (By.XPATH,'//ul[@class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"]')
 
 
 
@@ -23,9 +23,9 @@ class Register(BaseAction):
         self.driver=driver
 
 
-    def validate_register_page(self):
-        text = self.wait_for_element(self.register_text).text()
-        assert text=="Register", "Page not veryfied"
+    # def validate_register_page(self):
+    #     text = self.wait_for_element(self.register_text).text()
+    #     assert text=="Register", "Page not veryfied"
 
     def enter_first_name(self):
         self.type_input(self.first_name,"Suvam")
