@@ -14,7 +14,7 @@ class Register(BaseAction):
     hobbies = (By.XPATH,'//div[@class="col-md-4 col-xs-4 col-sm-4"]/div/input')
     languages_click = (By.XPATH,'//div[@id="msdd"]')
     language_dropdown = (By.XPATH,'//ul[@class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"]')
-
+    login_flipcart_text = (By.XPATH,"//span[text()='Login']")
 
 
 
@@ -60,6 +60,13 @@ class Register(BaseAction):
         self.get_web_element(self.languages_click).click()
         self.wait_for_element(self.language_dropdown)
         self.click_me('//a[text()="English"]')
+
+    def login_text_validation(self):
+        # excepted_text='Login'
+        self.wait_for_element(self.login_flipcart_text)
+        outcome_text = self.get_text(self.login_flipcart_text)
+        print(outcome_text)
+
 
 
 

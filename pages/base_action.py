@@ -58,6 +58,11 @@ class BaseAction:
         element.send_keys(value)
 
     def verify_element_displayed(self, locator):
+        """
+
+        :param locator: str,XPATH
+        :return: True or False
+        """
         element= self.get_web_element(locator)
         return element.is_displayed()
 
@@ -89,3 +94,14 @@ class BaseAction:
 
         element = self.get_web_element(locator)
         element.is_selected()
+
+    def get_text(self,locator):
+        """
+        Get the text
+        :param locator:
+        :return: Text
+        """
+        text = self.get_web_element(locator)
+        return text.text
+
+
